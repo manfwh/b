@@ -1,0 +1,21 @@
+.nav {
+  width: 50rpx;
+  padding-top: 100rpx;
+  position: fixed;
+  right: 0rpx;
+  top: 200rpx;
+}
+.nav view {
+  color: #cdcdcd;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  text-align: center;  
+}
+.main {
+  width: 670rpx;
+}
+.main .carLogo, .main .carLogo image{
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 50%;
+}

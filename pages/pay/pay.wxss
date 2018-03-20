@@ -1,0 +1,132 @@
+.wrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 240rpx;
+}
+.pay-panel {
+  position: relative;
+  width: 560rpx;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.pay-panel .top-bar {
+  height: 25rpx;
+  background: #183aa6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.pay-panel .top-bar2 {
+  position: relative;
+  z-index: 10;
+  height: 8rpx;
+  background: #f5ea36;
+}
+.pay-panel .user-pic {
+  position: absolute;
+  top: -48rpx;
+  left: 50%;
+  transform: translateX(-48rpx);  
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  background: #495969;
+}
+.pay-panel .user-pic image {
+  margin-top: -6rpx;
+  width: 44rpx;
+  height: 44rpx;
+}
+.pay-panel-body {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  height: 328rpx;
+  background: #fff;
+}
+.indicator {
+  height: 52rpx;
+}
+.indicator .dot {
+  width: 12rpx;
+  height: 12rpx;
+  background: #afe5c9;
+  border-radius: 50%;
+  margin-right: 16rpx;
+}
+.indicator .active {
+  background: #37be77;
+}
+.pay-title view {
+  text-align: center;
+}
+.pay-title view:last-child {
+  font-size: 24rpx;
+  color: #56beff;
+  font-weight: bold;
+}
+.pay-title image {
+  width: 46rpx;
+  height: 44rpx;
+  margin: 10rpx 0 6rpx 0;
+}
+.pay-input-wrap {
+  width: 394rpx;
+  height: 52rpx;
+  background: #fbfbfb;
+  border-radius: 28rpx;
+  margin: 16rpx auto;
+  border: 2rpx solid #ececec;
+}
+.pay-input-wrap .dot {
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background: #20cb5c;
+  border: 4rpx solid #d2f2dd;
+  margin: 0 16rpx;
+}
+.placeholder {
+  font-size: 22rpx;
+  color: #eaeaea;
+}
+.pay-input-wrap .input {
+  color: #455ab1;
+  font-size: 30rpx;
+}
+.next-btn {
+  border-radius: 38rpx;
+  font-size: 28rpx;
+  color: #fff;
+  width: 274rpx;
+  height: 76rpx;
+  background: #4d555d;
+}
+.next-btn-shadow {
+  position: absolute;
+  bottom: -38rpx;
+  left: 50%;
+  transform: translateX(-137rpx);
+  border-radius: 38rpx;
+}
+.next-btn.active {
+  background: linear-gradient(to right, #25d069, #3edd29);
+  box-shadow: inset 0 0 10px 0 #fff;
+}
+.next-btn image {
+  width: 43rpx;
+  height: 15rpx;
+}
+.next-btn .success-icon {
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  background: #27c353;
+}
+.next-btn .success-icon image {
+  width: 24rpx;
+  height: 18rpx;
+}
+.next-btn .text {
+  margin-left: 20rpx;
+}

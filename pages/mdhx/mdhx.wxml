@@ -1,0 +1,127 @@
+<view class="header">
+  <view class="container">
+    <view class="search-wrap justify-content-between">
+      <view class="search-dots align-items-center">
+        <view></view>
+        <view></view>
+      </view>
+      <input class="input-search" placeholder='Want to go...' placeholder-style="color: #5682ff; font-size: 24rpx;"></input>
+      <image class="voice" src="/images/icons/voice.png"></image>
+    </view>
+  </view>
+</view>
+<view class="bg-wrap">
+  <view class="bg1"></view>
+  <image src="/images/sections/bg.png" class="bg2"></image>
+</view>
+<view class="container">
+  <!--核销储值 开始  -->
+  <view class="justify-content-between scanCode">
+    <view class="box flex-center box-shadow" bindtap='scanCode'>
+      <view class="inbox flex-center box-shadow">
+        <image src="/images/icons/hx.png"></image>
+      </view>
+      <view class="box-text">
+        <view>TRAVEL SHOPING</view>
+        <view class="flex-center">
+          核
+          <view class="split"></view>
+          销
+        </view>
+      </view>
+      <view class="box-btn flex-center">
+        <image src="/images/icons/sao.png"></image>
+      </view>
+    </view>
+    <view class="box flex-center box-shadow">
+      <view class="inbox flex-center box-shadow">
+        <image src="/images/icons/cz.png"></image>
+      </view>
+      <view class="box-text">
+        <view>TRAVEL SHOPING</view>
+        <view class="flex-center">
+          储
+          <view class="split"></view>
+          值
+        </view>
+      </view>
+      <view class="box-btn flex-center">
+        <image src="/images/icons/sao.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 核销储值 结束  -->
+  <!--记录查询 开始  -->
+  <view>
+    <view class="item box-shadow flex-center-between" bindtap='navigateTo' data-url= "../hexiao/hexiao">
+      <view class="icon-wrap br50 flex-center">
+        <image src="/images/icons/sr.png"></image>
+      </view>
+      <view class="text">收入核销记录</view>
+      <view class="dot br50"></view>
+    </view>
+    <view class="item box-shadow flex-center-between" >
+      <view class="icon-wrap br50 flex-center">
+        <image src="/images/icons/sr2.png"></image>
+      </view>
+      <view class="text">储值核销记录</view>
+      <view class="dot br50"></view>
+    </view>
+    <view class="item box-shadow flex-center-between" bindtap='navigateTo' data-url= "../hyxf/hyxf">
+      <view class="icon-wrap br50 flex-center">
+        <image src="/images/icons/hy.png"></image>
+      </view>
+      <view class="text">会员消费记录</view>
+      <view class="dot br50"></view>
+    </view>
+  </view>
+  <!--记录查询 结束  -->
+  <!-- 数据展示 开始  -->
+  <view class="justify-content-between day-info">
+    <image class="bg-pic" src="/images/guanli-car.jpg"></image>
+    <view class="day-info-left">
+      <view class="text1">DESIGE CHANGE OUR LIFE</view>
+      <view class="text2">C H A N G E T H E W O R D</view>
+      <view class="dots d-flex">
+        <view></view>
+        <view></view>
+      </view>
+      <view>每日 X 数据汇总展示</view>
+    </view>
+    <view class="day-info-right">
+      <view class="row justify-content-between">
+        <view class="row-left">
+          消费
+          <view class="box">
+            23350
+            <text>RMB</text>
+          </view>
+        </view>
+        <view class="row-right">
+          人数
+          <view class="box">
+            20
+            <text>人</text>
+          </view>
+        </view>
+      </view>
+      <view class="row justify-content-between">
+        <view class="row-left">
+          充值
+          <view class="box">
+            23350
+            <text>RMB</text>
+          </view>
+        </view>
+        <view class="row-right">
+          人数
+          <view class="box">
+            20
+            <text>人</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 数据展示 结束  -->
+</view>

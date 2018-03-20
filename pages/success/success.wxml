@@ -1,0 +1,35 @@
+<view class="wrap">
+  <view class="pay-text">
+    恭喜您 本次收银成功
+  </view>
+  <view class="orderNumber-wrap flex-center">
+    <view class="dots d-flex">
+      <view class="bg1"></view>
+      <view class="bg2"></view>
+      <view class="bg3"></view>
+    </view>
+    <view class="order-number">{{orderNumber}}</view>
+    <view class="dots d-flex">
+      <view class="bg3"></view>
+      <view class="bg2"></view>
+      <view class="bg1"></view>
+    </view>
+  </view>
+  <view class="text">
+  GONGXININZHIFUCHENGGONG
+  </view>
+  <view class="success-pic">
+    <image class="pic-bg" src="/images/sections/success-bg.png"></image>
+    <view class="success-icon flex-center">
+      <image src="/images/icons/success-pic.png"></image>
+    </view>
+  </view>
+  <view class="footer">
+    <image src="/images/sections/footer-bg.png"></image>
+    <view class="btn-wrap" bindtap='backIndex'>
+      <view class="btn-back">
+        返回首页
+      </view>
+    </view>
+  </view>
+</view>

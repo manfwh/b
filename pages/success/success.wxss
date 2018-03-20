@@ -1,0 +1,92 @@
+.wrap {
+  height: 100%;
+  background: linear-gradient( to bottom, #179fff, #25e8c1)
+}
+.pay-text {
+  padding-top: 120rpx;
+  font-size: 34rpx;
+  color: #fff;
+  text-align: center;
+}
+.orderNumber-wrap {
+  margin-top: 25rpx;
+}
+.order-number {
+  margin: 0 28rpx;
+}
+.orderNumber-wrap .dots view {
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  margin-left: 4rpx;
+}
+.orderNumber-wrap .dots .bg1 {
+  background: #61cff0;
+}
+.orderNumber-wrap .dots .bg2 {
+  background: #bbeaf8;
+}
+.orderNumber-wrap .dots .bg3 {
+  background: #fff;
+}
+.text {
+  color: #7dd3ec;
+  font-size: 48rpx;
+  text-align: center;
+  padding-top: 30rpx;
+  word-wrap: break-word; 
+  word-break: normal; 
+  width: 556rpx;
+  margin: 0 auto;
+}
+.success-pic {
+  text-align: center;
+  margin-top: 110rpx;
+  position: relative;
+}
+.success-pic .pic-bg {
+  width: 327rpx;
+  height: 335rpx;
+}
+.success-icon {
+  position: absolute;
+  width: 246rpx;
+  height: 246rpx;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-123rpx, -123rpx)
+
+}
+.success-icon image {
+  width: 105rpx;
+  height: 71rpx;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer image {
+  width: 100%;
+  height: 164rpx;
+  vertical-align: top;
+}
+.footer .btn-wrap {
+  background: #fff;
+  padding-top: 34rpx;
+  height: 230rpx;
+}
+.footer .btn-wrap .btn-back {
+  margin: 0 auto;  
+  width: 400rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: linear-gradient(to right, #27d69e, #27db49);
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  box-shadow: 0 0 10px 1px #9be9bc;
+}

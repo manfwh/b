@@ -1,0 +1,220 @@
+<import src="/tpl/search.wxml" />
+
+<view class="container">
+  <template is="search" data="{{cate: false, input: input, placeholder: '请输入您要查询的会员姓名'}}" />
+  <block wx:if="{{true}}">
+    <!--会员车辆信息 开始  -->
+    <view class="hy-info align-items-center">
+      <view class="left">
+        <view class="hy-name">YID0U-XUPENG</view>
+        <view class="align-items-center">
+          <view class="setting flex-center">
+            <image src="/images/icons/setting.png"></image>
+          </view>
+          <view class="btn">车险</view>
+          <view class="btn">车检</view>
+          <view class="btn">生日</view>
+        </view>
+        <view class="car-info">
+          车牌号：晋A·00865 车型：路虎发现(2018款)
+        </view>
+        <view class="more-btn">
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+      <view class="hy-avatar box-shadow">
+        <image class="hy-avatar-pic" src="/images/tmp/avatar.jpg"></image>
+        <image class="label-pic" src="/images/icons/label.png"></image>
+      </view>
+    </view>
+    <!--会员车辆信息 结束  -->
+    <!-- 会员卡券 开始  -->
+    <view class="card-wrap box-shadow">
+      <view class="top-bar"></view>
+      <view class="flex-center-between balance-wrap">
+        <view class="balance-text">
+          <view class="text1">当前余额</view>
+          <view class="text2">DANGQIANYUE</view>
+        </view>
+        <view class="balance-num">
+          389.00
+          <text>RMB</text>
+        </view>
+      </view>
+      <view class="split">
+      .............................................................................................
+      </view>
+      <view class="card-type">
+        <view class="card-type-header">
+          <view class="header-pic">
+            <image src="/images/icons/card-dot.png"></image>
+          </view>
+          <view class="card-type-subtitle">
+            DISANFANGZHIFUSHAIXUAN
+          </view>
+          <view class="card-type-title">
+            有效卡筛选
+          </view>
+          
+        </view>
+        <view class="card-list">
+            <view class="bg1 card box-shadow flex-center-between">
+              <view class="card-pic flex-center">
+                <image src="/images/icons/card.png"></image>
+              </view>
+              <view class="card-info">
+                <view class="card-name">兜兜周年庆礼品卡 （1万元）</view>
+                <view class="card-code">6245 3365 9626 33</view>
+              </view>
+              <view class="card-balance d-flex">
+                剩余 1万元
+                <view class="bar"></view>
+              </view>
+            </view>
+            <view class="bg2 card box-shadow flex-center-between">
+              <view class="card-pic flex-center">
+                <image src="/images/icons/card.png"></image>
+              </view>
+              <view class="card-info">
+                <view class="card-name">兜兜洗车卡  （20次） </view>
+                <view class="card-code">6245 3365 9626 33</view>
+              </view>
+              <view class="card-balance d-flex">
+                剩余 10次
+                <view class="bar"></view>
+              </view>
+            </view>
+            <view class="bg3 card box-shadow flex-center-between">
+              <view class="card-pic flex-center">
+                <image src="/images/icons/card.png"></image>
+              </view>
+              <view class="card-info">
+                <view class="card-name">兜兜洗车卡  （20次） </view>
+                <view class="card-code">6245 3365 9626 33</view>
+              </view>
+              <view class="card-balance d-flex">
+                剩余 10次
+                <view class="bar"></view>
+              </view>
+            </view>
+          </view>
+      </view>
+      <view class="card-type">
+        <view class="card-type-header">
+          <view class="header-pic">
+            <image src="/images/icons/card-dot.png"></image>
+          </view>
+          <view class="card-type-subtitle">
+            DISANFANGZHIFUSHAIXUAN
+          </view>
+          <view class="card-type-title">
+            失效卡筛选
+          </view>
+          
+        </view>
+        <view class="card-list">
+            <view class="bg0 card box-shadow flex-center-between">
+              <view class="card-pic flex-center">
+                <image src="/images/icons/card.png"></image>
+              </view>
+              <view class="card-info">
+                <view class="card-name">兜兜周年庆礼品卡 （1万元）</view>
+                <view class="card-code">6245 3365 9626 33</view>
+              </view>
+              <view class="card-balance d-flex">
+                剩余 0元
+                <view class="bar"></view>
+              </view>
+            </view>
+            
+          </view>
+      </view>
+    </view>
+    <!-- 会员卡券 结束  -->
+    <!-- 消费充值查询 开始  -->
+    <view class="tabs">
+      <view class="tab-nav justify-content-between">
+        <view class="tab-btn flex-center-between {{selected == 0 ? 'active' : '' }}" bindtap='tab' data-index="0">
+          <view class="dot br50"></view>
+          消费记录
+          <view class="label br50">{{consumption.length}}</view>
+        </view>
+        <view class="tab-btn flex-center-between {{selected == 1 ? 'active' : '' }}" bindtap='tab' data-index="1">
+          <view class="dot br50"></view>
+          充值记录
+          <view class="label br50">{{stored.length}}</view>
+        </view>
+      </view>
+      <view class="total">
+        <text>累计{{selected == 0 ? '消费' : '充值'}}</text>
+        <text>{{selected == 0 ? consumptionTotal : storedTotal}}</text>
+        <text>RMB</text>
+      </view>
+      <view class="tab-content">
+        <view class="list" hidden="{{selected == 1}}">
+          <view class="item box-shadow" wx:for="{{consumption}}" wx:key="{{index}}">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-content text-ellipsis">
+              {{item.content}}
+            </view>
+            <view class="split">
+              ······································
+            </view>
+            <view class="item-footer align-items-center">
+              <view class="code-label">No</view>
+              {{item.code}}
+              <image src="/images/icons/date.png"></image>
+              {{item.date}}
+            </view>
+            <view class="moneny-wrap box-shadow">
+              {{item.moneny}}
+              <text>RMB</text>
+              <image src="/images/sections/arraw.png"></image>
+            </view>
+            <view class="more-btn">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+        </view>
+        <view class="list" hidden="{{selected == 0}}">
+          <view class="item box-shadow" wx:for="{{stored}}" wx:key="{{index}}">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-content text-ellipsis">
+              {{item.content}}
+            </view>
+            <view class="split">
+              ······································
+            </view>
+            <view class="item-footer align-items-center">
+              <view class="code-label">No</view>
+              {{item.code}}
+              <image src="/images/icons/date.png"></image>
+              {{item.date}}
+            </view>
+            <view class="moneny-wrap box-shadow">
+              {{item.moneny}}
+              <text>RMB</text>
+              <image src="/images/sections/arraw.png"></image>
+            </view>
+            <view class="more-btn">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <image class="empty-pic" src="/images/empty.png"></image>
+    <view class="empty-text">OH!</view>
+    <view class="empty-des">
+      {{status == 0 ? "您所查找的会员不存在" :"您还没有输入关键词搜索会员信息"}}
+    </view>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "财务管理",
+  "usingComponents": {
+    "tab-list": "/components/tabList/tabList"
+  }
+}

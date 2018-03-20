@@ -1,0 +1,40 @@
+<view class="container">
+  <image class="title box-shadow" src="/images/tmp/carLogo.jpg"></image>
+  <view class="panel">
+    <view class="panel-header">
+      <view class="bar"></view>
+      <view class="">
+        <view class="panel-title">车辆型号</view>
+        <view class="panel-sub-title">CHELIANGXINGHAO</view>
+      </view>
+    </view>
+  </view>
+  <view class="d-flex">
+    <view class="main">
+        <view class="item box-shadow" wx:for="{{models}}" wx:key="{{item}}" bindtap='showCarDetail' data-model="{{item}}">
+          <view class="carLogo flex-center"><image src="/images/icons/car-icon.png"></image></view>
+          <view class="brand">{{item}}</view>
+          <view class="dots">
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+          <view class="total">
+             135
+            <text>辆</text>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>

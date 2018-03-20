@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container" scroll-y>
+  <scroll-view class="info" id="info" scroll-with-animation scroll-y scroll-top="200" scroll-into-view="{{toView}}" style="height:{{height}}px;">
+    <view class="iitem" id="{{item.id}}" wx:for="{{info_list}}" wx:key="1">
+      <text>{{item.id}}</text> . {{item.desc}}
+    </view>
+  </scroll-view>
+  <view class="letter {{active == true ? 'active': ''}}" bindtouchstart='start' bindtouchmove='move' bindtouchend='end'>
+    <view class="litem" bindtap='down' data-index="999">☆</view>
+    <view class="litem" wx:for="{{letter_list}}" bindtap='down' wx:for-index="index" wx:key="2" data-index="{{index}}" style="height: {{letter_height}}px;">{{item}}</view>
+  </view>
+</view>
+<view class="tips" hidden="{{hide}}">{{curView}}</view>

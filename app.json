@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/success/success",
+    "pages/mdhx/mdhx",
+    "pages/hexiao/hexiao",
+    "pages/hyxf/hyxf",
+    "pages/pay/pay",
+    "pages/hyinfo/hyinfo",
+    "pages/demo/demo",
+    "pages/finance/finance",
+    "pages/stock/stock",
+    "pages/logs/logs",
+    "pages/carBrand/carBrand",    
+    "pages/carBrand/carModel/carModel",
+    "pages/carBrand/carDetail/carDetail"
+  ],
+  "window": {
+    "backgroundColor": "#ededed",
+    "navigationBarBackgroundColor": "#285bed",
+    "navigationBarTitleText": "兜兜汽修服务",
+    "navigationBarTextStyle": "white"
+  }
+}

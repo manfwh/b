@@ -1,0 +1,15 @@
+<view class="header justify-content-between">
+  <view class="search-wrap">
+    <view class="dots flex-center">
+      <view></view>
+      <view></view>
+    </view>
+    <input class="input-search" placeholder='Want to go...' placeholder-style="color: #5682ff; font-size: 24rpx;"></input>
+    <image class="icon-search" src="/images/icons/search.png"></image>
+  </view>
+  <slot>
+  </slot>
+  <view class="cate-btn flex-center">
+    <image src="/images/icons/cate.png"></image>
+  </view>
+</view>

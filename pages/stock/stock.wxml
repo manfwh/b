@@ -1,0 +1,135 @@
+<import src="/tpl/search.wxml" />
+
+<view class="container">
+  <template is="search" data="{{cate: true, placeholder: '请输入您要查询的配件名称'}}" />
+  <view class="main">
+    <view class="tabs justify-content-between">
+      <view class='tab-btn {{selected == 0 ? "active" : ""}}' bindtap="tab" data-index="0">
+        <view class="bg">
+          XUANXAINGFENLEI
+        </view>
+        <view class="dot"></view>
+        入库记录
+        <view class="dot"></view>
+      </view>
+      <view class='tab-btn {{selected == 1 ? "active" : ""}}' bindtap="tab" data-index="1">
+        <view class="bg">
+          XUANXAINGFENLEI
+        </view>
+        <view class="dot"></view>
+        出库记录
+        <view class="dot"></view>
+      </view>
+    </view>
+    <view class="list-wrap">
+      <view class="info-wrap flex-center-between">
+        <view class="left flex-center-between">
+          <view class="dots d-flex">
+            <view></view>
+            <view></view>
+          </view>
+          <view class="text">MY PLANT..</view>
+          <view class="nums">{{selected==0?incomeList.length:storedList.length}}</view>
+        </view>
+        <view class="right d-flex">
+          <view class="text1">累计{{selected==0? '入库': '出库'}}</view>
+          <view class="total">{{selected==0?incomeTotal:storedTotal}}</view>
+          <view class="text2">件</view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="list-items" hidden="{{selected == 1}}">
+          <view class="item d-flex box-shadow" wx:for="{{incomeList}}">
+            <view class="more-btn">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+            <view class="money-wrap box-shadow">
+              <image src="/images/sections/arraw.png"></image>
+              {{item.moneny}}
+              <text>件</text>
+            </view>
+            <view class="left">
+              <view class="avatar-wrap box-shadow">
+                <image src="{{userinfo.avatarUrl}}"></image>
+              </view>
+              
+            </view>
+            <view>
+              <view class="item-title">
+                {{item.title}}
+              </view>
+              <view class="code-wrap d-flex">
+                <view class="code-label">No</view>
+                <view class="code">{{item.code}}</view>
+              </view>
+              <view class="content text-ellipsis">
+                {{item.content}}
+              </view>
+              <view class="split">
+                ··········································
+              </view>
+              <view class="justify-content-between">
+                <view class="box">
+                  <image src="/images/icons/user.png"></image>
+                  {{item.user}}
+                </view>
+                <view class="box">
+                  <image src="/images/icons/date.png"></image>
+                  {{item.date}}
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+        <view class="list-items" hidden="{{selected == 0}}">
+          <view class="item d-flex box-shadow" wx:for="{{storedList}}">
+            <view class="more-btn">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+            <view class="money-wrap box-shadow">
+              <image src="/images/sections/arraw.png"></image>
+              {{item.moneny}}
+              <text>件</text>
+            </view>
+            <view class="left">
+              <view class="avatar-wrap box-shadow">
+                <image src="{{userinfo.avatarUrl}}"></image>
+              </view>
+             
+            </view>
+            <view>
+              <view class="item-title">
+                {{item.title}}
+              </view>
+              <view class="code-wrap d-flex">
+                <view class="code-label">No</view>
+                <view class="code">{{item.code}}</view>
+              </view>
+              <view class="content text-ellipsis">
+                {{item.content}}
+              </view>
+              <view class="split">
+                ··········································
+              </view>
+              <view class="justify-content-between">
+                <view class="box">
+                  <image src="/images/icons/user.png"></image>
+                  {{item.user}}
+                </view>
+                <view class="box">
+                  <image src="/images/icons/date.png"></image>
+                  {{item.date}}
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

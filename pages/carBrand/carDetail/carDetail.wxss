@@ -1,0 +1,32 @@
+.title {
+  width: 700rpx;
+  height: 340rpx;
+  display: block;
+  margin: 20rpx auto;
+  border-radius: 5px;
+}
+.main {
+  width: 100%;
+}
+.main .carLogo {
+  width: 47rpx;
+  height: 47rpx;
+  border-radius: 50%;
+  background: #25d56f;
+  box-shadow: 0 0 10px 0 #b1f0cc;
+} 
+.main .carLogo image{
+ width: 28rpx;
+ height: 25rpx;
+}
+.btn {
+  font-size: 22rpx;
+  text-align: center;
+  width: 82rpx;
+  height: 42rpx;
+  border-radius: 21rpx;
+  background: linear-gradient(to right, #419cd6, #284fbe);
+  line-height: 42rpx;
+  margin: 0 26rpx;
+  box-shadow: 0 0 10px 0 #c5d7f0;
+}

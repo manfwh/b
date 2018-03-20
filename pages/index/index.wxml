@@ -1,0 +1,189 @@
+<!--顶部搜索框 开始  -->
+<view class="header">
+  <view class="search-wrap justify-content-between">
+    <view class="search-dots align-items-center">
+      <view></view>
+      <view></view>
+    </view>
+    <input class="input-search" placeholder='Want to go...' placeholder-style="color: #5682ff; font-size: 24rpx;"></input>
+    <image class="voice" src="/images/icons/search.png"></image>
+  </view>
+</view>
+<view class="main">
+  <view class="block">
+    <view class="block-title">
+      <view class="container align-items-center">
+        <view class="dot br50"></view>
+        近日数据展示
+      </view>
+    </view>
+    <view class="block-main">
+      <view class="bg">
+        <image class="bg-left" src="/images/sections/block-main-left.jpg"></image>
+        <image class="bg-right" src="/images/sections/block-main-right.jpg"></image>
+      </view>
+      <view class="block-body">
+        <view class="chart">
+          <view class="canvas-wrap">
+            <!-- <view class="cates d-flex">
+              <view>收益</view>
+              <view>核销</view>
+              <view>储值</view>
+            </view> -->
+            <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="administration">
+    <view class="title-wrap">
+      <view class="text-bg">
+        <text>0</text>
+        <text>1</text>
+      </view>
+      <view class="sub-tit">WODEGUANLI</view>
+      <view class="tit">我的管理</view>
+    </view>
+    <view class="justify-content-between container">
+      <view class="entry flex-center box-shadow" bindtap='navigateTo' data-url="../finance/finance">
+        <image src="/images/icons/caiwu.png"></image>
+        <view class="caption">
+          <view>财务管理</view>
+          <view>CAIWUGUANLI</view>
+        </view>
+      </view>
+      <view class="entry flex-center box-shadow" bindtap='navigateTo' data-url="../stock/stock">
+        <image src="/images/icons/kucun.png"></image>
+        <view class="caption">
+          <view>库存管理</view>
+          <view>KUCUNGUANLI</view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+  <view class="justify-content-between day-info">
+    <image class="bg-pic" src="/images/guanli-car.jpg"></image>
+    <view class="day-info-left">
+      <view>
+        今日访问
+        <text>1623</text>次
+      </view>
+      <view class="dots d-flex">
+        <view></view>
+        <view></view>
+      </view>
+      <view>DESIGE CHANGE OUR LIFE</view>
+      <view>C H A N G E T H E W O R D</view>
+
+      <view>每日 数据汇总展示</view>
+    </view>
+    <view class="day-info-right">
+      <view class="row justify-content-between">
+        <view class="row-left">
+          消费
+          <view class="box">
+            23350
+            <text>RMB</text>
+          </view>
+        </view>
+        <view class="row-right">
+          人数
+          <view class="box">
+            20
+            <text>人</text>
+          </view>
+        </view>
+      </view>
+      <view class="row justify-content-between">
+        <view class="row-left">
+          充值
+          <view class="box">
+            23350
+            <text>RMB</text>
+          </view>
+        </view>
+        <view class="row-right">
+          人数
+          <view class="box">
+            20
+            <text>人</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="shichang">
+    <view class="title-wrap">
+      <view class="text-bg">
+        <text>0</text>
+        <text>2</text>
+      </view>
+      <view class="sub-tit">WODESHICHANG</view>
+      <view class="tit">我的市场</view>
+    </view>
+    <view class="wrap">
+      <view class="box box1 pl-38 bga6">
+        <view class="text1">CARS PARTY</view>
+        <view class="text2">汽车的盛会</view>
+      </view>
+      <view class="box box2 bga6" bindtap='navigateTo' data-url="../carBrand/carBrand">
+        <text class="text3">3250</text>
+        <text class="text4">辆</text>
+      </view>
+      <view class="box">
+        <image class="sc-pic" src="/images/car1.jpg"></image>
+      </view>
+      <view class="box box4 bga7">
+        <view class="text-wrap d-flex">
+          <view class="text-wrap-left">
+            <view class="text1">CHEXIAN</view>
+            <view class="text2">办理车险</view>
+          </view>
+          <view class="text-wrap-right">
+            <text class="text3">5</text>
+            <text class="text4">单</text>
+          </view>
+        </view>
+       
+      </view>
+      <view class="box">
+        <image class="sc-pic" src="/images/car2.jpg"></image>
+
+      </view>
+      <view class="box box4 bga8">
+        <view class="text-wrap d-flex">
+          <view class="text-wrap-left">
+            <view class="text1">CHEXIAN</view>
+            <view class="text2">缴纳车险</view>
+          </view>
+          <view class="text-wrap-right">
+            <text class="text3">9</text>
+            <text class="text4">单</text>
+          </view>
+        </view>
+       
+      </view>
+      <view class="box box1 pl-38 bga8">
+
+        <view class="text1">VISIT TODAY</view>
+        <view class="text2">累计会员</view>
+      </view>
+      <view class="box box2 bga9">
+
+        <text class="text3">3250</text>
+        <text class="text4">辆</text>
+      </view>
+      <view class="box box1 pl-38 box-bg">
+        <view class="text1">ERSHOUCHE</view>
+        <view class="text2">二手车交易</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--顶部搜索框 结束  -->

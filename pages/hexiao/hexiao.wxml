@@ -1,0 +1,86 @@
+<import src="/tpl/search.wxml" />
+
+<view class="container">
+  <!-- 顶部搜索框 开始   -->
+
+  <template is="search" data="{{cate: false}}" />
+
+  <!--顶部搜索框 结束  -->
+
+  <view class="main">
+
+    <view class="list-wrap">
+      <!-- 统计总数 开始  -->
+      <view class="info-wrap flex-center-between">
+        <view class="left flex-center-between">
+          <view class="dots d-flex">
+            <view></view>
+            <view></view>
+          </view>
+          <view class="text">MY PLANT..</view>
+          <view class="nums">{{selected==0?incomeList.length:storedList.length}}</view>
+        </view>
+        <view class="right d-flex">
+          <view class="text1">累计储值</view>
+          <view class="total">{{selected==0?incomeTotal:storedTotal}}</view>
+          <view class="text2">RMB</view>
+        </view>
+      </view>
+      <!-- 统计总数 结束  -->
+      <!-- 列表 开始  -->
+      <view class="list">
+        <view class="list-items" hidden="{{selected == 1}}">
+          <view class="item d-flex box-shadow" wx:for="{{incomeList}}">
+            <view class="more-btn">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+            <view class="money-wrap box-shadow">
+              <image src="/images/sections/arraw.png"></image>
+              {{item.moneny}}
+              <text>RMB</text>
+            </view>
+            <view class="left">
+              <view class="avatar-wrap box-shadow">
+                <image src="{{userinfo.avatarUrl}}"></image>
+              </view>
+              <view class="stars d-flex">
+
+                <image wx:for="{{[1,2,3,4,5]}}" src="/images/icons/{{index < item.level ? 'star1': 'star2'}}.png"></image>
+              </view>
+            </view>
+            <view>
+              <view class="item-title">
+                {{item.title}}
+              </view>
+              <view class="code-wrap d-flex">
+                <view class="code-label">No</view>
+                <view class="code">{{item.code}}</view>
+              </view>
+              <view class="content text-ellipsis">
+                {{item.content}}
+              </view>
+              <view class="split">
+                ··········································
+              </view>
+              <view class="justify-content-between">
+                <view class="box">
+                  <image src="/images/icons/user.png"></image>
+                  {{item.user}}
+                </view>
+                <view class="box">
+                  <image src="/images/icons/date.png"></image>
+                  {{item.date}}
+                </view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+
+      </view>
+      <!-- 列表 结束  -->
+    </view>
+  </view>
+</view>

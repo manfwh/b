@@ -1,0 +1,99 @@
+.card-wrap {
+  width: 658rpx;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin: 55rpx auto 0;
+  padding-bottom: 38rpx;
+  overflow: hidden;
+}
+.card-wrap .top-bar {
+  height: 8rpx;
+  background: #ffdd21;
+  margin-bottom: 45rpx;
+}
+.balance-wrap {
+  padding: 0 16rpx;
+}
+.card-wrap .balance-text .text1{
+  font-size: 26rpx;
+  color: #4165cc;
+  font-weight: bold;
+}
+.card-wrap .balance-text .text2 {
+  font-size: 26rpx;
+  color: #9aa9de;
+}
+.card-wrap .balance-num {
+  color: #4165cc;
+  font-size: 68rpx;
+}
+.card-wrap .balance-num text {
+  font-size: 34rpx;
+  color: #8a9fdd;
+}
+.card-wrap .split {
+  font-size: 24rpx;
+  color: #d1d1d1;
+  text-align: center;
+}
+.card-wrap .header-pic {
+  text-align: center;
+}
+.card-wrap .header-pic image {
+  width: 30rpx;
+  height: 8rpx;
+}
+.card-wrap .card-type-subtitle {
+  font-size: 26rpx;
+  color: #d4d4d4;
+  text-align: center;
+}
+.card-wrap .card-type-title {
+  font-size: 28rpx;
+  color: #3a414a;
+  font-weight: bold;
+  text-align: center;
+}
+.card-wrap .card {
+  width: 614rpx;
+  border-radius: 5px;
+  height: 94rpx;
+  margin: 16rpx auto 0;
+
+}
+.card .card-pic {
+  margin-left: 30rpx;
+  margin-right: 25rpx;
+}
+.card .card-pic image {
+  width: 46rpx;
+  height: 30rpx;
+}
+.card .card-info {
+  font-size: 26rpx;
+  flex: 1;
+}
+.card-balance {
+  font-size: 18rpx;
+  align-items: flex-end;
+}
+.card-balance .bar {
+  width: 8rpx;
+  height: 64rpx;
+  border-radius: 4rpx;
+  background: #fff;
+  margin-left: 22rpx;
+  margin-right: 10rpx;
+}
+.card-wrap .bg1 {
+  background: #4165cc;
+}
+.card-wrap .bg2 {
+  background: #41a0cc;
+}
+.card-wrap .bg3 {
+  background: #8241cc;
+}
+.card-wrap .bg0 {
+  background: #d0d0d0;
+}

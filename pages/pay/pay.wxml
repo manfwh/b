@@ -1,0 +1,38 @@
+<view class="wrap">
+  <view class="pay-panel">
+    <view class="top-bar"></view>
+    <view class="top-bar2"></view>
+    <view class="user-pic flex-center">
+      <image src="/images/icons/user2.png"></image>
+    </view>
+    <view class="pay-panel-body box-shadow">
+      <view class="indicator flex-center">
+        <view class="dot active"></view>
+        <view class="dot"></view>
+      </view>
+      <view class="pay-title">
+        <view class="pay-pic">
+          <image src="/images/icons/pay.png"></image>
+        </view>
+        <view>本次消费金额</view>
+      </view>
+      <view class="pay-input-wrap flex-center-between">
+        <view class="dot"></view>
+        <input class="input" value="{{payValue}}" focus bindinput="inputHandle" type="digit" placeholder='请在此处输入本次消费金额' placeholder-class='placeholder'></input>
+      </view>
+      <view class="box-shadow next-btn-shadow">
+        <button loading="{{loading}}" class="next-btn flex-center {{btnDisabled ? '' : 'active'}}" bindtap='payHandle'>
+          
+          <image src="/images/icons/nextDisabled.png" hidden="{{!btnDisabled}}"></image>
+          <image src="/images/icons/nextActive.png" hidden="{{btnDisabled || loading || success}}"></image>
+          <view wx:if="{{success}}" class="success-icon flex-center"><image src="/images/icons/success.png"></image></view>
+          <view class="text">{{loadValue}}</view>
+          
+          
+        </button>
+      </view>
+
+
+    </view>
+  </view>
+</view>

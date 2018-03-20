@@ -1,0 +1,157 @@
+.header {
+  background: #285bed;
+}
+.search-wrap {
+  width: 100%;
+}
+.search-dots {
+  padding: 0 17rpx;
+}
+.search-dots view {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  margin-right: 4rpx;
+}
+.search-dots view:first-child {
+  background: #22d2bb
+}
+.search-dots view:last-child {
+  background: #fff;
+}
+.input-search {
+  flex: 1;
+}
+.search-wrap .voice {
+  width: 62rpx;
+  height: 32rpx;
+  margin-right: 30rpx;
+}
+/* 背景图片  */
+.bg-wrap {
+  position: relative;
+  z-index: -1;
+}
+.bg-wrap .bg1, .bg-wrap .bg2 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.bg-wrap .bg1 {
+  height: 84rpx;
+  background: #285bed;
+  top: 0;
+} 
+.bg-wrap .bg2 {
+  height: 197rpx;
+  top: 84rpx;
+} 
+
+/* 核销 储值  */
+.scanCode .box {
+  margin-top: 20rpx;
+  width: 334rpx;
+  height: 430rpx;
+  border-radius: 10px;
+  background: #fff;
+  flex-direction: column;
+  position: relative;
+}
+.box .inbox {
+  width: 152rpx;
+  height: 172rpx;
+  border-radius: 5px;
+  background: #fff;
+}
+.box .inbox image {
+  width: 75rpx;
+  height: 70rpx;
+}
+.box:last-child .inbox image {
+  width: 90rpx;
+}
+.scanCode .box .box-text {
+  margin-top: 24rpx;
+  
+}
+.box .box-text view {
+  font-weight: bold;
+}
+.box .box-text view:first-child{
+  color: #6785f0;
+  font-size: 24rpx;
+}
+.box .box-text view:last-child{
+  color: #285bed;
+  font-size: 32rpx;  
+}
+.box .box-text .split {
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background: #285bed;
+  border: 3rpx solid #8ee2cf;
+  margin: 0 6rpx;
+}
+.box .box-btn {
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  top: 0;
+  right: 0;
+}
+.box .box-btn image {
+  width: 34rpx;
+  height: 34rpx;
+}
+.item {
+  width: 690rpx;
+  height: 84rpx;
+  background: #fff;
+  border-radius: 5px;
+  margin: 25rpx auto 0;
+}
+.item .icon-wrap {
+  width: 58rpx;
+  height: 58rpx;
+  background: #2c46e5;
+  box-shadow: 0px 2px 12px 0px #c4cbf8;
+  margin: 0 26rpx;
+}
+.item:nth-child(1) .icon-wrap image {
+  width: 25rpx;
+  height: 29rpx;
+}
+.item:nth-child(2) .icon-wrap image {
+  width: 26rpx;
+  height: 26rpx;
+}
+.item:nth-child(3) .icon-wrap image {
+  width: 28rpx;
+  height: 26rpx;
+}
+.item .text {
+  color: #285bed;
+  font-size: 28rpx;
+  font-weight: bold;
+  flex: 1;
+}
+.item .dot {
+  width: 10rpx;
+  height: 10rpx;
+  background: #da1f5d;
+  border: 6rpx solid #f0a5be;
+  margin-right: 30rpx;
+}
+
+/* 数据展示  */
+.day-info-left {
+  padding-top: 90rpx;
+}
+.day-info .text1 {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.day-info .text2 {
+  font-size: 20rpx;
+}

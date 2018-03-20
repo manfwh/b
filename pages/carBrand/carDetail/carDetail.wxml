@@ -1,0 +1,36 @@
+<view class="container">
+  <image class="title box-shadow" src="/images/tmp/carLogo.jpg"></image>
+  <view class="panel">
+    <view class="panel-header">
+      <view class="bar"></view>
+      <view class="">
+        <view class="panel-title">{{model}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="d-flex">
+    <view class="main">
+        <view class="item box-shadow" wx:for="{{holders}}" wx:key="{{item}}">
+          <view class="carLogo flex-center"><image src="/images/icons/car-icon.png"></image></view>
+          <view class="brand">{{item}}</view>
+          <view class="dots">
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+          <view class="btn" bindtap='goDetail' data-car="{{item}}">详情</view>
+        </view>
+      </view>
+  </view>
+</view>

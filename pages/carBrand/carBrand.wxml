@@ -1,0 +1,45 @@
+<scroll-view class="container" scroll-y scroll-into-view="{{toView}}" style="height:{{height}}px;">
+  <view class="panel">
+    <view class="panel-header">
+      <view class="bar"></view>
+      <view class="">
+        <view class="panel-title">请选择您要查看的汽车品牌</view>
+        <view class="panel-sub-title">PLASE FILL IN YOUR APPLICATION INFORMATION</view>
+      </view>
+    </view>
+  </view>
+  <view class="d-flex">
+    <view class="main">
+      <view wx:for="{{brands}}" wx:key="{{item}}" >
+        <view class="group-title" id="{{item.cate}}">{{item.cate}}</view>
+        <view class="item box-shadow" wx:for="{{item.list}}" wx:for-item="brand" wx:key="{{brand}}" bindtap='showCarModel' data-car="{{brand}}">
+          <view class="carLogo box-shadow"><image src="/images/tmp/carLogo.png"></image></view>
+          <view class="brand">{{brand}}</view>
+          <view class="dots">
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+          <view class="total">
+             135
+            <text>辆</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="nav">
+      <view wx:for="{{brands}}" bindtouchstart='go' data-id="{{item.cate}}" wx:key="{{item}}">{{item.cate}}</view>
+    </view>
+  </view>
+</scroll-view>

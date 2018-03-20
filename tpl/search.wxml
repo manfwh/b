@@ -1,0 +1,16 @@
+ <template name="search"> 
+  <view class="header justify-content-between">
+    <view class="search-wrap">
+      <view class="dots flex-center">
+        <view></view>
+        <view></view>
+      </view>
+      <input class="input-search" placeholder='{{placeholder}}' placeholder-style="color: #5682ff; font-size: 24rpx;" value="{{input}}" bindblur="updateInput"></input>
+      <view class="searc-btn"> <image class="icon-search" src="/images/icons/search.png" bindtap='searchHandle' ></image></view>
+     
+    </view>
+    <view class="cate-btn flex-center" wx:if="{{cate}}">
+      <image src="/images/icons/cate.png"></image>
+    </view>
+  </view>
+ </template> 
