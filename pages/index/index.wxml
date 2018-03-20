@@ -139,23 +139,18 @@
       <view class="box">
         <image class="sc-pic" src="/images/car1.jpg"></image>
       </view>
-      <view class="box box4 bga7">
-        <view class="text-wrap d-flex">
-          <view class="text-wrap-left">
-            <view class="text1">CHEXIAN</view>
-            <view class="text2">办理车险</view>
-          </view>
-          <view class="text-wrap-right">
-            <text class="text3">5</text>
-            <text class="text4">单</text>
-          </view>
-        </view>
-       
+      <view class="box box1 pl-38 bga7">
+        <view class="text1">ERSHOUCHE</view>
+        <view class="text2">二手车交易</view>
       </view>
-      <view class="box">
-        <image class="sc-pic" src="/images/car2.jpg"></image>
+      <view class="box box2 bga7" bindtap='navigateTo' data-url="../carBrand/carBrand">
+        <text class="text3">12</text>
+        <text class="text4">辆</text>
+      </view>
+      <!-- <view class="box">
+        <!-- <image class="sc-pic" src="/images/car2.jpg"></image> 
 
-      </view>
+      </view> -->
       <view class="box box4 bga8">
         <view class="text-wrap d-flex">
           <view class="text-wrap-left">
@@ -174,14 +169,23 @@
         <view class="text1">VISIT TODAY</view>
         <view class="text2">累计会员</view>
       </view>
-      <view class="box box2 bga9">
+      <view class="box box2 bga8">
 
         <text class="text3">3250</text>
-        <text class="text4">辆</text>
+        <text class="text4">人</text>
       </view>
-      <view class="box box1 pl-38 box-bg">
-        <view class="text1">ERSHOUCHE</view>
-        <view class="text2">二手车交易</view>
+      <view class="box box4 box-bg">
+        <view class="text-wrap d-flex">
+          <view class="text-wrap-left">
+            <view class="text1">CHEXIAN</view>
+            <view class="text2">办理车险</view>
+          </view>
+          <view class="text-wrap-right">
+            <text class="text3">5</text>
+            <text class="text4">单</text>
+          </view>
+        </view>
+       
       </view>
     </view>
   </view>
